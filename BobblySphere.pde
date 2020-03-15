@@ -1,7 +1,3 @@
-import peasy.*;
-
-PeasyCam cam;
-
 PVector[][] globe;
 int total = 250;
 float bolbingMax = 1.1;
@@ -13,7 +9,6 @@ PVector[] stars;
 
 void setup() {
   size(600, 600, P3D);
-  //cam = new PeasyCam(this, 0, 0, 0 , 500);
   colorMode(HSB, 255);
   globe = new PVector[total+1][total+1];
   
@@ -50,8 +45,6 @@ void draw() {
       float pNoise = noise(xoff+phase, yoff+phase, zoff+phase);
       float r = map(pNoise, 0, 1, 100, 200);
       
-      //float r = 200;
-      
       float x = r * sin(lat) * cos(lon);
       float y = r * sin(lat) * sin(lon);
       float z = r * cos(lat);
@@ -61,7 +54,7 @@ void draw() {
         PVector v1 = globe[i-1][j];
         PVector v2 = globe[i][j];
         
-        // Color
+        // Color with Perlin noise
         float redShift = map(r, 100, 200, 0, 25);
         float cNoise = noise(phase + colorMutator * v1.x, phase + colorMutator * v1.y, phase +colorMutator * v1.z);
         float hu = map(cNoise, 0, 1, 0, 45 - redShift);

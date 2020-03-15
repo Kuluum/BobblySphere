@@ -1,6 +1,6 @@
 float t = 0; // Time (passed frames actualy)
 float speed = 0.03; // Bobbling speed coefficient
-float bobbleRate = 0.5; // More rate -> mor sharp, Less rate - mpre bobble.
+float bobbleRate = 0.5; // More rate -> mor sharp, Less rate - more bobble.
 
 void setup() {
   size(300, 300);
