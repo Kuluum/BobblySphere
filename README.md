@@ -1,6 +1,6 @@
 # Wobbly Bobbly Sphere Drawing
 
-![Medium article](https://medium.com/@kuluum/drawing-wobbly-bobbly-lava-ball-21577ab6d559)
+[Medium article](https://medium.com/@kuluum/drawing-wobbly-bobbly-lava-ball-21577ab6d559)
 
 ## From
 
